@@ -6,6 +6,7 @@ namespace _085_Empwadge
     {
         static void Main()
         {
+            //attendence
             int ispresent = 1;
             
             Random random = new Random();
