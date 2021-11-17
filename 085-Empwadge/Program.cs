@@ -24,8 +24,8 @@ namespace _085_Empwadge
                 int emphr = 0;
                 Console.WriteLine(" employee is absent");
             }
-            empwadge = rateperHr * empHr;
-            Console.WriteLine(empwadge);
+            int empwage = empHr * rateperHr;
+            Console.WriteLine("emp wadge per day is " + empwadge);
         }
     }
 }
