@@ -4,20 +4,41 @@ namespace _085_Empwadge
 {
     class Program
     {
-        static void Main()
+        private static int emphr;
+
+        public static void Main()
         {
-            int ispresent = 1;
-            
+            int isfulltime = 1;
+            int isparttime = 2;
+
+            int empwadge = 0;
+            int rateperHr = 20;
+            int empHr = 0;
+
             Random random = new Random();
-            int input = random.Next(0,2);
-            if (input == ispresent)
+            int input = random.Next(0, 3);
+            switch (input)
             {
-                Console.WriteLine("Employee is present");
-            }
-            else
-            {
-                Console.WriteLine(" employee is absent");
-            }
+                case 1:
+                     emphr = 8;
+                    Console.WriteLine("Employee is present for fulltime");
+                    break;
+
+                case 2:
+                     emphr = 4;
+                    Console.WriteLine("Employee is present for Parttime");
+                    break;
+
+                default:
+                     emphr = 0;
+                    Console.WriteLine(" employee is absent");
+                    break;
+
+
+                    
+        }
+            int empwage = empHr * rateperHr;
+            Console.WriteLine("emp wadge per day is " + empwadge);
         }
     }
 }
