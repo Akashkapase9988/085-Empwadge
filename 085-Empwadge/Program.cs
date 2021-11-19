@@ -5,7 +5,9 @@ namespace _085_Empwadge
     class Program
     {
         private static int emphr;
-
+        /// <summary>
+        /// use of switch statement
+        /// </summary>
         public static void Main()
         {
             int isfulltime = 1;
