@@ -6,18 +6,25 @@ namespace _085_Empwadge
     {
         static void Main()
         {
-            int ispresent = 1;
+            int isfulltime = 1;
+            int isparttime = 2;
+          
             int empwadge = 0;
             int rateperHr = 20;
             int empHr = 0;
             
             Random random = new Random();
-            int input = random.Next(0,2);
-            if (input == ispresent)
+            int input = random.Next(0,3);
+            if (input == isfulltime)
             {
                 int emphr = 8;
-                Console.WriteLine("Employee is present");
-               
+                Console.WriteLine("Employee is present for fulltime");
+
+            }
+            else if (input == isparttime)
+            {
+               int emphr = 4;
+                Console.WriteLine("Employee is present for Parttime");
             }
             else
             {
