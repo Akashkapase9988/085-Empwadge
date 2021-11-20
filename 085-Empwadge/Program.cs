@@ -5,12 +5,14 @@ namespace _085_Empwadge
     
     class progarm
     {
+
         public const int isfulltime = 1;
         public const int isparttime = 2;
         public const int rateperhr = 20;
         public const int daysinmoth = 20;
         public const int MAX_HRS_IN_MONTH = 100;
         public const int NUM_OF_WORKING_DAYS = 20;
+
         public static void main()
         {
             //
@@ -25,12 +27,16 @@ namespace _085_Empwadge
                 int empCheck = random.Next(0, 3);
                 switch (empCheck)
                 {
+
                     case isfulltime:
                         empHrs = 4;
                         break;
                     case isparttime:
-                        empHrs = 8;
+
+                        empHrs = 4;
                         break;
+ 
+                   
                     default:
                         empHrs = 0;
                         break;
@@ -38,7 +44,10 @@ namespace _085_Empwadge
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Days#: " + totalWorkingDays + " Emp Hrs : " + empHrs);
             }
+
             int totalEmpWage = totalEmpHrs * rateperhr;
+           
+
             Console.WriteLine("Total Emp Wage: " + totalEmpWage);
         }
     }
